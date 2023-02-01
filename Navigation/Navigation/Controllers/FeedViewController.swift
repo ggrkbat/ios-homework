@@ -9,11 +9,11 @@ import UIKit
 
 class FeedViewController: UIViewController {
 
-    var post = Post(title: "Пост")
+    var post = Post(title: "Post")
 
     private let button: UIButton = {
         let button = UIButton()
-        button.setTitle("Перейти к посту", for: .normal)
+        button.setTitle("Post", for: .normal)
         button.setTitleColor(UIColor.black, for: .normal)
         button.backgroundColor = .systemBlue
         button.layer.cornerRadius = 12
