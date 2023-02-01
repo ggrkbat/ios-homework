@@ -153,7 +153,7 @@ class ProfileHeaderView: UIView {
        print(statusText)
     }
 
-    @objc func statusTextChanged(_ textField: UITextField) {
+    @objc private func statusTextChanged(_ textField: UITextField) {
         statusText = textField.text ?? ""
     }
 
