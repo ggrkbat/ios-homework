@@ -23,7 +23,7 @@ class FeedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemGray6
-        setupConstraints()
+        setupSubView()
         setupButton()
         button.frame = CGRect(x: 100, y: 400, width: 200, height: 100)
     }
@@ -38,12 +38,8 @@ class FeedViewController: UIViewController {
         navigationController?.pushViewController(postViewController, animated: true)
     }
 
-    func setupConstraints() {
+    func setupSubView() {
         view.addSubview(button)
 
-        NSLayoutConstraint.activate([
-            button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            button.centerYAnchor.constraint(equalTo: view.centerYAnchor)
-        ])
     }
 }
