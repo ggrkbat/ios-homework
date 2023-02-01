@@ -9,11 +9,11 @@ import UIKit
 
 class FeedViewController: UIViewController {
 
-    var post = Post(title: "Пост")
+    var post = Post(title: "Post")
 
     private let button: UIButton = {
         let button = UIButton()
-        button.setTitle("Перейти к посту", for: .normal)
+        button.setTitle("Post", for: .normal)
         button.setTitleColor(UIColor.black, for: .normal)
         button.backgroundColor = .systemBlue
         button.layer.cornerRadius = 12
@@ -23,7 +23,7 @@ class FeedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemGray6
-        setupConstraints()
+        setupSubView()
         setupButton()
         button.frame = CGRect(x: 100, y: 400, width: 200, height: 100)
     }
@@ -38,12 +38,8 @@ class FeedViewController: UIViewController {
         navigationController?.pushViewController(postViewController, animated: true)
     }
 
-    func setupConstraints() {
+    func setupSubView() {
         view.addSubview(button)
 
-        NSLayoutConstraint.activate([
-            button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            button.centerYAnchor.constraint(equalTo: view.centerYAnchor)
-        ])
     }
 }
