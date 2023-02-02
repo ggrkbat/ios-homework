@@ -56,18 +56,8 @@ class ProfileViewController: UIViewController {
             self.profileHeaderView.leftAnchor.constraint(equalTo: self.view.leftAnchor),
             self.profileHeaderView.rightAnchor.constraint(equalTo: self.view.rightAnchor),
             self.profileHeaderView.heightAnchor.constraint(equalToConstant: 220)
-
-
-//                    self.profileHeaderView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 16),
-//                    self.profileHeaderView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant:  16),
-//                    self.profileHeaderView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -16),
-//                    self.profileHeaderView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: 16),
-                    ])
+            ])
         
-    }
-
-    override func viewWillLayoutSubviews() {
-
     }
 
 }
