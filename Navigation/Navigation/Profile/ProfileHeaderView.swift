@@ -11,7 +11,7 @@ class ProfileHeaderView: UIView {
 
     private var statusText = "Cтатус"
 
-    // MARK: UI elements
+    //MARK: UI elements
 
    private lazy var fullNameLabel: UILabel = {
         let label = UILabel()
