@@ -9,7 +9,7 @@ import UIKit
 
 class FeedViewController: UIViewController {
 
-    var post = Post(title: "Post")
+
 
     private lazy var postStackView: UIStackView = {
         let stackView = UIStackView()
@@ -67,16 +67,17 @@ class FeedViewController: UIViewController {
             self.postStackView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
             self.postStackView.heightAnchor.constraint(equalToConstant: 220),
             self.postStackView.widthAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.widthAnchor)
-    ])
+        ])
 
         self.firstPostButton.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         self.secondPostButton.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
     }
 
     @objc func buttonAction() {
-        let postViewController = PostViewController()
-        postViewController.titlePost = post.title
-        navigationController?.pushViewController(postViewController, animated: true)
+        let post = postMassive[0]
+        let postVC = PostViewController()
+        postVC.post = post
+        navigationController?.pushViewController(postVC, animated: true)
     }
 
 }
