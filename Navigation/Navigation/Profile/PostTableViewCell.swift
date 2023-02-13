@@ -73,6 +73,7 @@ class PostTableViewCell: UITableViewCell {
         self.selectionStyle = .default
 
         NSLayoutConstraint.activate([
+
             postAuthor.topAnchor.constraint(equalTo: contentView.topAnchor, constant: LayoutConstants.indent),
             postAuthor.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: LayoutConstants.leadingMargin),
             postAuthor.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: LayoutConstants.trailingMargin),

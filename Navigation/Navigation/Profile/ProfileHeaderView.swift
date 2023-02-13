@@ -9,9 +9,6 @@ import UIKit
 
 class ProfileHeaderView: UITableViewHeaderFooterView {
 
-  
-
-
     private var statusText = "Cтатус"
 
     // MARK: UI elements
@@ -97,7 +94,7 @@ class ProfileHeaderView: UITableViewHeaderFooterView {
 
         NSLayoutConstraint.activate([
 
-
+            self.fullNameLabel.topAnchor.constraint(equalTo: topAnchor, constant: 16),
             self.fullNameLabel.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor, constant: 156),
             self.fullNameLabel.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor, constant: -16),
             self.fullNameLabel.heightAnchor.constraint(equalToConstant: 28),

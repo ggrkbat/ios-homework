@@ -37,6 +37,7 @@ class ProfileViewController: UIViewController {
             self.view.addSubview(self.postTableView)
 
                 NSLayoutConstraint.activate([
+
                     self.postTableView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor),
                     self.postTableView.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor),
                     self.postTableView.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor),
@@ -86,8 +87,6 @@ extension ProfileViewController: UITableViewDelegate {
         return headerView
     }
 
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        220
-    }
+   
 
 }
