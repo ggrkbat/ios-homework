@@ -7,13 +7,16 @@
 
 import UIKit
 
-class ProfileHeaderView: UIView {
+class ProfileHeaderView: UITableViewHeaderFooterView {
+
+  
+
 
     private var statusText = "Cтатус"
 
     // MARK: UI elements
 
-   private lazy var fullNameLabel: UILabel = {
+    private lazy var fullNameLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 18, weight: .bold)
         label.textColor = .black
@@ -72,8 +75,9 @@ class ProfileHeaderView: UIView {
         return textField
     }()
 
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    override init(reuseIdentifier: String?) {
+        super.init(reuseIdentifier: reuseIdentifier)
+
         self.drawSelf()
     }
 
@@ -93,7 +97,7 @@ class ProfileHeaderView: UIView {
 
         NSLayoutConstraint.activate([
 
-            self.fullNameLabel.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 27),
+
             self.fullNameLabel.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor, constant: 156),
             self.fullNameLabel.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor, constant: -16),
             self.fullNameLabel.heightAnchor.constraint(equalToConstant: 28),
@@ -132,5 +136,7 @@ class ProfileHeaderView: UIView {
     @objc  func statusTextChanged(_ textField: UITextField) {
         statusText = textField.text ?? ""
     }
+
+    
 
 }

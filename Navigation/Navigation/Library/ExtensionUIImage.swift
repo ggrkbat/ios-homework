@@ -2,7 +2,7 @@
 //  ExtensionUIImage.swift
 //  Navigation
 //
-//  Created by Денис Ярошко on 07.02.2023.
+//  Created by Денис Ярошко on 11.02.2023.
 //
 
 import UIKit
