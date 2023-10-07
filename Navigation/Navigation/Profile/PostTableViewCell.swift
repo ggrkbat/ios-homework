@@ -9,7 +9,7 @@ import UIKit
 
 class PostTableViewCell: UITableViewCell {
 
-    private var viewCount = 0
+    private var viewCounter = 0
 
     //MARK: - UI elements
 
@@ -101,8 +101,13 @@ class PostTableViewCell: UITableViewCell {
         postDescription.text = post.description
         postImage.image = UIImage(named: post.image)
         postLikes.text = "Нравится: \(post.likes)"
-        viewCount = post.views
-        postViews.text = "Просмотров: \(viewCount)"
+        viewCounter = post.views
+        postViews.text = "Просмотров: \(viewCounter)"
+    }
+
+    func incrementPostViewsCounter() {
+        viewCounter += 1
+        postViews.text = "Views: \(viewCounter)"
     }
 
 }
