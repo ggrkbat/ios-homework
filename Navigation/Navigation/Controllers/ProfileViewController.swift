@@ -98,7 +98,7 @@ extension ProfileViewController: UITableViewDelegate {
         return section == 0 ? 220 : 0
     }
 
-    private func tableView(_ tableView: UITableView, didSelectRowswAt indexPath: IndexPath) {
+    internal func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.section {
         case 0:
             tableView.deselectRow(at: indexPath, animated: false)

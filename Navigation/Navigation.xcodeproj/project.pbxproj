@@ -71,11 +71,8 @@
 			isa = PBXGroup;
 			children = (
 				FA0CEBF32986B48500A275C7 /* ProfileHeaderView.swift */,
-				FA0CEBF52986B4C100A275C7 /* ProfileViewController.swift */,
-				FAD13004299170C5007BC2B6 /* LoginViewController.swift */,
 				FA88211F2992D78D00E44D4D /* PostTableViewCell.swift */,
 				FAD4846D2ACAD3550099997D /* PhotosTableViewCell.swift */,
-				FAD484712ACB1B800099997D /* PhotosViewController.swift */,
 				FA63D7202ACC7CFC00598B8B /* PhotosCollectionViewCell.swift */,
 			);
 			path = Profile;
@@ -137,6 +134,9 @@
 		FA97D78B297EF267006541D9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FAD13004299170C5007BC2B6 /* LoginViewController.swift */,
+				FA0CEBF52986B4C100A275C7 /* ProfileViewController.swift */,
+				FAD484712ACB1B800099997D /* PhotosViewController.swift */,
 				FA97D798297F0FD8006541D9 /* FeedViewController.swift */,
 				FA97D79C297F1243006541D9 /* PostViewController.swift */,
 				FA97D79E297F1D3F006541D9 /* InfoViewController.swift */,

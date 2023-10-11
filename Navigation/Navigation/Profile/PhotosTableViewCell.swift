@@ -65,7 +65,7 @@ class PhotosTableViewCell: UITableViewCell {
 
     //MARK: preview
     private func setupPreviews() {
-        for ind in 0...2 {
+        for ind in 0...3 {
             let image = getPreviewImage(index: ind)
             imageStackView.addArrangedSubview(image)
             NSLayoutConstraint.activate([
