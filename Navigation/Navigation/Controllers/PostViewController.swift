@@ -9,12 +9,12 @@ import UIKit
 
 class PostViewController: UIViewController {
 
-    var titlePost: String = ""
+    var post: Post?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemGray6
-        self.navigationItem.title = titlePost
+        title = post?.author ?? "-"
         setupBarButtonItem()
     }
 
